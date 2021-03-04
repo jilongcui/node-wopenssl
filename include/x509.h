@@ -23,6 +23,7 @@ NAN_METHOD(get_altnames);
 NAN_METHOD(get_subject);
 NAN_METHOD(get_issuer);
 NAN_METHOD(parse_cert);
+NAN_METHOD(verify);
 
 Local<Value> try_parse(const std::string& dataString);
 Local<Value> parse_date(ASN1_TIME *date);

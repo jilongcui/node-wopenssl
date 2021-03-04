@@ -13,4 +13,5 @@ fs.readdirSync(path.join(__dirname, 'certs')).forEach(function (file) {
 });
 
 
+console.log("P12 File: %s", "test/p12/cert.p12");
 console.log(wopenssl.x509.parseCert(wopenssl.pkcs12.extract("test/p12/cert.p12", "password").certificate));

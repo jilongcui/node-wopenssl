@@ -14,7 +14,7 @@
       'sources': [
         'src/addon.cc',
         'src/x509.cc',
-	'src/pkcs12.cc'
+        'src/pkcs12.cc'
       ],
       'include_dirs': [
         'include',
@@ -37,8 +37,8 @@
           'defines': [
             'uint=unsigned int',
           ],
-          'libraries': [ 
-            '-l<(openssl_root)/lib/libeay32.lib',
+          'libraries': [
+            '-l<(openssl_root)/lib/libcrypto.lib',
           ],
           'include_dirs': [
             '<(openssl_root)/include',
